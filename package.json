@@ -1,0 +1,36 @@
+{
+  "name": "@hexlet/code",
+  "version": "1.0.0",
+  "description": "My 2nd project at Hexlet",
+  "bin": {
+    "gendiff": "bin/gendiff.js"
+  },
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Aintdead86/frontend-project-lvl2.git"
+  },
+  "keywords": [
+    "Hexlet",
+    "2nd",
+    "project"
+  ],
+  "author": "Anton Dedyaev",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Aintdead86/frontend-project-lvl2/issues"
+  },
+  "homepage": "https://github.com/Aintdead86/frontend-project-lvl2#readme",
+  "dependencies": {
+    "commander": "^9.2.0"
+  },
+  "devDependencies": {
+    "eslint": "^8.13.0",
+    "eslint-config-airbnb-base": "^15.0.0",
+    "eslint-plugin-import": "^2.26.0"
+  }
+}
