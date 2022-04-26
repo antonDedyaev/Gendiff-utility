@@ -1,8 +1,7 @@
 #!/usr/bin/env node
-/* eslint-disable import/extensions */
-/* eslint-disable no-console */
+
 import { program } from 'commander';
-import genDiff from '../src/diffFunc.js';
+import { genDiff } from '../src/diffFunc.js';
 
 program
   .name('gendiff')
