@@ -1,14 +1,17 @@
-import { readFileSync } from 'fs';
 import path from 'path';
+import { readFileSync } from 'fs';
+import { fileURLToPath } from 'url';
 import _ from 'lodash';
 
-const filepath = (filename) => path.resolve(process.cwd(), filename);
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const getFixturePath = (filename) => path.resolve(__dirname, '..', '__fixtures__', filename);
+const readFile = (filename) => readFileSync(getFixturePath(filename), 'utf-8');
 
 const genDiff = (filename1, filename2) => {
-  const absolutePath1 = readFileSync(filepath(filename1), 'utf-8');
-  const absolutePath2 = readFileSync(filepath(filename2), 'utf-8');
-  const objFromJson1 = JSON.parse(absolutePath1);
-  const objFromJson2 = JSON.parse(absolutePath2);
+  const objFromJson1 = JSON.parse(readFile(filename1));
+  const objFromJson2 = JSON.parse(readFile(filename2));
   const keysOfObj1 = Object.keys(objFromJson1);
   const keysOfObj2 = Object.keys(objFromJson2);
   const allKeys = _.sortBy(keysOfObj1.concat(keysOfObj2));
@@ -26,4 +29,4 @@ const genDiff = (filename1, filename2) => {
     }, []);
   return `{\n${difference.join('\n')}\n}`;
 };
-export default genDiff;
+export { genDiff, readFile };
