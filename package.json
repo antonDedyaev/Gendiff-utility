@@ -26,6 +26,7 @@
   },
   "homepage": "https://github.com/Aintdead86/frontend-project-lvl2#readme",
   "dependencies": {
+    "@types/lodash": "^4.14.182",
     "commander": "^9.2.0",
     "lodash": "^4.17.21"
   },
