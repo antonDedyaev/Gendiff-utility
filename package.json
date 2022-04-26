@@ -8,7 +8,7 @@
   "type": "module",
   "main": "diffFunc.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npx jest --bail"
   },
   "repository": {
     "type": "git",
@@ -30,8 +30,10 @@
     "lodash": "^4.17.21"
   },
   "devDependencies": {
+    "@jest/globals": "^28.0.0",
     "eslint": "^8.13.0",
     "eslint-config-airbnb-base": "^15.0.0",
-    "eslint-plugin-import": "^2.26.0"
+    "eslint-plugin-import": "^2.26.0",
+    "jest": "^27.5.1"
   }
 }
