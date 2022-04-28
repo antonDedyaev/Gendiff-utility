@@ -7,3 +7,6 @@
 
 ```Demo with 2 flat JSON files```
 [![asciicast](https://asciinema.org/a/sEwrjwTCWoSWFafWkQM4RYUWi.svg)](https://asciinema.org/a/sEwrjwTCWoSWFafWkQM4RYUWi)
+
+```Demo with 2 flat YAML/YML files```
+[![asciicast](https://asciinema.org/a/xBnr4WboOCiHxWzpnG0VElFYb.svg)](https://asciinema.org/a/xBnr4WboOCiHxWzpnG0VElFYb)
