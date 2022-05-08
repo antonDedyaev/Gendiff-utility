@@ -12,4 +12,4 @@
 [![asciicast](https://asciinema.org/a/xBnr4WboOCiHxWzpnG0VElFYb.svg)](https://asciinema.org/a/xBnr4WboOCiHxWzpnG0VElFYb)
 
 ```Demo with nested JSON and YML files```
-[![asciicast](https://asciinema.org/a/ZfThciLpq4DEsd0SFiVoAdUf0.svg)](https://asciinema.org/a/ZfThciLpq4DEsd0SFiVoAdUf0)
+[![asciicast](https://asciinema.org/a/pcgN6yd9UTGeBgk12pqqLgLZy.svg)](https://asciinema.org/a/pcgN6yd9UTGeBgk12pqqLgLZy)
