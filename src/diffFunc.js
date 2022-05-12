@@ -1,8 +1,8 @@
 import _ from 'lodash';
 import { parse } from '../utils/parsers.js';
-import stylish from '../formatters/stylish.js';
+import defineFormat from '../formatters/index.js';
 
-const genDiff = (filename1, filename2, formatter = stylish) => {
+const genDiff = (filename1, filename2, formatName) => {
   const objFromFile1 = parse(filename1);
   const objFromFile2 = parse(filename2);
 
@@ -28,6 +28,6 @@ const genDiff = (filename1, filename2, formatter = stylish) => {
     return difference;
   };
   const tree = buildTree(objFromFile1, objFromFile2);
-  return formatter(tree);
+  return defineFormat(tree, formatName);
 };
 export default genDiff;
