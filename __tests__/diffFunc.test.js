@@ -1,13 +1,16 @@
-import { test, expect } from '@jest/globals';
+import { test, expect, describe } from '@jest/globals';
 import genDiff from '../src/diffFunc.js';
 import { readFile } from '../utils/parsers.js';
 
 const expectedNested = readFile('referenceNested.txt');
+const expectedPlain = readFile('referencePlain.txt');
 
-test('compare nested JSON files', () => {
-  expect(genDiff('file1.json', 'file2.json')).toEqual(expectedNested);
-});
+describe('compare YAML/JSON files', () => {
+  test('stylish formatter', () => {
+    expect(genDiff('file1.yml', 'file2.yaml', 'stylish')).toEqual(expectedNested);
+  });
 
-test('compare nested YAML files', () => {
-  expect(genDiff('file1.yml', 'file2.yaml')).toEqual(expectedNested);
+  test('plain formatter', () => {
+    expect(genDiff('file1.json', 'file2.json', 'plain')).toEqual(expectedPlain);
+  });
 });
