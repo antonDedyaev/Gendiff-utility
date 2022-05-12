@@ -17,5 +17,5 @@
 ```Demo with stylish and plain formatters```
 [![asciicast](https://asciinema.org/a/Ky7g9yOrTCd5nuWUPsQvc8Mit.svg)](https://asciinema.org/a/Ky7g9yOrTCd5nuWUPsQvc8Mit)
 
-```Demo with json formatter
+```Demo with json formatter```
 [![asciicast](https://asciinema.org/a/McmihpiCUQ7XuCD7WLsYuPlnl.svg)](https://asciinema.org/a/McmihpiCUQ7XuCD7WLsYuPlnl)
