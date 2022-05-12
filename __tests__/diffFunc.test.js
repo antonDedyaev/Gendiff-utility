@@ -4,6 +4,7 @@ import { readFile } from '../utils/parsers.js';
 
 const expectedNested = readFile('referenceNested.txt');
 const expectedPlain = readFile('referencePlain.txt');
+const expectedJSON = readFile('referenceJSON.txt');
 
 describe('compare YAML/JSON files', () => {
   test('stylish formatter', () => {
@@ -12,5 +13,9 @@ describe('compare YAML/JSON files', () => {
 
   test('plain formatter', () => {
     expect(genDiff('file1.json', 'file2.json', 'plain')).toEqual(expectedPlain);
+  });
+
+  test('json formatter', () => {
+    expect(genDiff('file1.yml', 'file2.json', 'json')).toEqual(expectedJSON);
   });
 });
