@@ -13,3 +13,6 @@
 
 ```Demo with nested JSON and YML files```
 [![asciicast](https://asciinema.org/a/pcgN6yd9UTGeBgk12pqqLgLZy.svg)](https://asciinema.org/a/pcgN6yd9UTGeBgk12pqqLgLZy)
+
+```Demo with different formatters```
+[![asciicast](https://asciinema.org/a/Ky7g9yOrTCd5nuWUPsQvc8Mit.svg)](https://asciinema.org/a/Ky7g9yOrTCd5nuWUPsQvc8Mit)
