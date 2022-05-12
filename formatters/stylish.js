@@ -29,10 +29,10 @@ const stylish = (tree) => {
           return `${keyIndent(depth)}+ ${key}: ${stringify(value, depth)}`;
         case 'deleted':
           return `${keyIndent(depth)}- ${key}: ${stringify(value, depth)}`;
-        case 'unchanged':
-          return `${keyIndent(depth)}  ${key}: ${stringify(value, depth)}`;
         case 'changed':
           return `${keyIndent(depth)}- ${key}: ${stringify(valBefore, depth)}\n${keyIndent(depth)}+ ${key}: ${stringify(valAfter, depth)}`;
+        case 'unchanged':
+          return `${keyIndent(depth)}  ${key}: ${stringify(value, depth)}`;
         default:
           return null;
       }
