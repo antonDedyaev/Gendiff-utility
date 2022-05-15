@@ -6,7 +6,7 @@
     "gendiff": "bin/gendiff.js"
   },
   "type": "module",
-  "main": "diffFunc.js",
+  "main": "src/diffFunc.js",
   "scripts": {
     "test": "npx jest --bail"
   },
