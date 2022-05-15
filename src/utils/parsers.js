@@ -15,10 +15,8 @@ const parse = (filename) => {
       return JSON.parse(readFile(filename));
     case 'yml':
       return yaml.load(readFile(filename));
-    case 'yaml':
-      return yaml.load(readFile(filename));
     default:
-      return null;
+      return yaml.load(readFile(filename));
   }
 };
 export { parse, readFile };
