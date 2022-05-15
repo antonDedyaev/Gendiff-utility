@@ -21,10 +21,8 @@ const plain = (tree) => {
           return `Property '${property}${key}' was removed`;
         case 'changed':
           return `Property '${property}${key}' was updated. From ${valueFormat(valBefore)} to ${valueFormat(valAfter)}`;
-        case 'unchanged':
-          return [];
         default:
-          return null;
+          return [];
       }
     });
     return `${setFormat.join('\n')}`;
