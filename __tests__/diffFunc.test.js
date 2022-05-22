@@ -1,6 +1,6 @@
 import { test, expect, describe } from '@jest/globals';
 import genDiff from '../src/diffFunc.js';
-import { readFile } from '../src/utils/parsers.js';
+import readFile from '../src/utils/fileReader.js';
 
 const expectedNested = readFile('referenceNested.txt');
 const expectedPlain = readFile('referencePlain.txt');
