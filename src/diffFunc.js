@@ -1,4 +1,4 @@
-import { parse } from './utils/parsers.js';
+import parse from './utils/parsers.js';
 import defineFormat from './formatters/index.js';
 import buildTree from './builder.js';
 

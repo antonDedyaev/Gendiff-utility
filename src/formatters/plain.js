@@ -25,7 +25,7 @@ const plain = (tree) => {
           return [];
       }
     });
-    return `${setFormat.join('\n')}`;
+    return setFormat.join('\n');
   };
   return pathToRoot(tree);
 };
