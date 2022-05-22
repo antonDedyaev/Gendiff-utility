@@ -5,7 +5,7 @@
 [![Maintainability](https://api.codeclimate.com/v1/badges/23f303fa5988fe300f6a/maintainability)](https://codeclimate.com/github/Aintdead86/frontend-project-lvl2/maintainability)
 [![Test Coverage](https://api.codeclimate.com/v1/badges/23f303fa5988fe300f6a/test_coverage)](https://codeclimate.com/github/Aintdead86/frontend-project-lvl2/test_coverage)
 
-Gendiff utility
+## Gendiff utility
 
 This CLI utility is used to compare JSON and YML files and show differences between them in different formats!
 
